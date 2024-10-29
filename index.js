@@ -94,7 +94,7 @@ async function getUserByEmail(email) {
                      const nuevoRegistro = await agregarNuevoRegistro(formData);
                      if (nuevoRegistro) {
                        console.log('Registro creado exitosamente:', nuevoRegistro);
-                       window.location.href = '/courses';                  
+                       window.location.href = 'https://wbsckt3.github.io/gsg_data/index2.html';                  
                      } else {
                        console.error('Error al crear el registro.');
                      }
@@ -127,7 +127,7 @@ async function agregarNuevoRegistro(registro){
             throw new Error('Error en la solicitud');
           }
           const data = await response.json();
-          return data.GoogleSigninUser; // Ajusta segï¿½n la respuesta real del servidor
+          return data.GoogleSigninUser; 
          } catch (error) {
           console.error('Error:', error);
           return null;
