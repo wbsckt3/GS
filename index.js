@@ -102,7 +102,7 @@ async function getUserByEmail(email) {
                   } else {
                     const data = await response.json();
                     if (data.GoogleSigninUser) {
-                       window.location.href = '/courses';
+                       window.location.href = 'https://wbsckt3.github.io/gsg_data/index2.html';
                        return data.GoogleSigninUser;
                     } else {
                       return null;
